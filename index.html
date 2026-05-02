@@ -1,10 +1,184 @@
-<html>
-  <head>
-    <title>
-      
-    </title>
-  </head>
-  <body>
-    Hello World!!
-  </body>
+This HTML template is designed to replicate the clean, professional, and academic aesthetic of the University of Auckland profile pages. It uses a structured layout featuring a sidebar for contact information and main content sections for your biography, research, and teaching.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile | Partha Roop</title>
+    <style>
+        :root {
+            --uoa-blue: #00467f;
+            --light-grey: #f8f9fa;
+            --text-dark: #333;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: var(--uoa-blue);
+            color: white;
+            padding: 2rem 5%;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* Sidebar Styling */
+        aside {
+            flex: 1;
+            min-width: 280px;
+            padding-right: 30px;
+        }
+
+        .profile-card {
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            background: var(--light-grey);
+            border-radius: 4px;
+        }
+
+        .contact-info h3 {
+            margin-top: 0;
+            color: var(--uoa-blue);
+        }
+
+        .contact-info p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+
+        /* Main Content Styling */
+        main {
+            flex: 3;
+            min-width: 350px;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--uoa-blue);
+            padding-bottom: 5px;
+            color: var(--uoa-blue);
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .tag-container {
+            margin: 10px 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 5px 12px;
+            margin: 0 5px 5px 0;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            aside {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Partha Roop</h1>
+    <p>Professor and Head of the Department of Electrical, Computer and Software Engineering</p>
+</header>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside>
+        <div class="profile-card">
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><strong>Email:</strong> p.roop@auckland.ac.nz</p>
+                <p><strong>Phone:</strong> +64 9 373 7599 Ext. 85583</p>
+                <p><strong>Location:</strong> Engineering Block 5 (Bldg 405), 5 Grafton Rd, Auckland</p>
+                <hr>
+                <p><a href="https://scholar.google.com/citations?user=4OrohVMAAAAJ" target="_blank">Google Scholar Profile</a></p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Sections -->
+    <main>
+        <section id="bio">
+            <h2>Bio</h2>
+            <p>Partha is a Professor and the Head of the Department of Electrical, Computer, and Software Engineering at the University of Auckland. His work focuses on the design of safety-critical systems and the intersection of formal methods with artificial intelligence.</p>
+        </section>
+
+        <section id="research-interests">
+            <h2>Research Interests</h2>
+            <div class="tag-container">
+                <span class="tag">Cyber-Physical Systems</span>
+                <span class="tag">Formal Methods</span>
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Real-Time Systems</span>
+                <span class="tag">AI for Software Engineering</span>
+            </div>
+        </section>
+
+        <section id="appointments">
+            <h2>University Appointments</h2>
+            <ul>
+                <li><strong>Head of Department</strong> - Electrical, Computer and Software Engineering</li>
+                <li><strong>Associate Dean International</strong> - Faculty of Engineering</li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching & Supervision</h2>
+            <p>Specializing in the supervision of PhD and sub-doctoral research. Current focus areas include:</p>
+            <ul>
+                <li>Combating fake news through policy-enforced machine learning.</li>
+                <li>Real-time detection and mitigation of unregulated social media spread.</li>
+                <li>Design and verification of medical devices (e.g., pacemaker security).</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+</body>
 </html>
+```
+
+### Key Features:
+*   **Responsive Design:** The layout automatically stacks vertically on smaller screens (like mobile phones) and displays side-by-side on desktops.
+*   **University Colors:** Uses the official-style blue and light grey tones common in academic directories.
+*   **Departmental Branding:** Includes placeholders for your specific contact extensions and office locations based on current university records.
+*   **Extensible Sections:** You can easily add more `<section>` tags for Research Outputs or Engagement to match the depth of your actual profile.
